@@ -1,7 +1,5 @@
 package com.yubraj.example1;
 
-import org.omg.PortableServer.THREAD_POLICY_ID;
-
 /**
  * Created by yubraj on 7/4/16.
  */
@@ -77,6 +75,33 @@ public class App {
         //        Thread ID: 11 Number is :7
         //        Thread ID: 11 Number is :8
         //        Thread ID: 11 Number is :9
+
+        // here now the threads are not concurrently now
+        // but we can make them to run concurrently by using the Thread.sleep(millis) method
+        // lets say that we want to run first thread  and then we will put it in
+        // sleep for 100 millis in that time the second thread will run and so on
+
+        // so the output will be
+        //        Thread ID: 10 Number is :0
+        //        Thread ID: 11 Number is :0
+        //        Thread ID: 10 Number is :1
+        //        Thread ID: 11 Number is :1
+        //        Thread ID: 11 Number is :2
+        //        Thread ID: 10 Number is :2
+        //        Thread ID: 11 Number is :3
+        //        Thread ID: 10 Number is :3
+        //        Thread ID: 11 Number is :4
+        //        Thread ID: 10 Number is :4
+        //        Thread ID: 11 Number is :5
+        //        Thread ID: 10 Number is :5
+        //        Thread ID: 11 Number is :6
+        //        Thread ID: 10 Number is :6
+        //        Thread ID: 11 Number is :7
+        //        Thread ID: 10 Number is :7
+        //        Thread ID: 11 Number is :8
+        //        Thread ID: 10 Number is :8
+        //        Thread ID: 11 Number is :9
+        //        Thread ID: 10 Number is :9
 
 
 
